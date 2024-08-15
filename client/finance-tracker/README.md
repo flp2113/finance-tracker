@@ -1,7 +1,7 @@
 [] Initial setup
-[] User profile
+[X] User profile
 [] Goals
-[] Income, Expense
+[X] Income, Expense
 [] Bank Account, Wallet, Savings
 [] Subscription
 [] Charts

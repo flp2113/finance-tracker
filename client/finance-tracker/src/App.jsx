@@ -1,11 +1,17 @@
 import UserCard from "./components/User/UserCard";
-import Box from '@mui/material/Box';
+import Incomes from "./components/IncomeExpense/Incomes";
+import Expenses from "./components/IncomeExpense/Expenses";
+import { Box, Container } from '@mui/material';
 
 function App() {
     return (
-        <Box>
-            <UserCard />
-        </Box>
+        <Container>
+            <UserCard></UserCard>
+            <Box>
+                <Incomes />
+                <Expenses />
+            </Box>
+        </Container>
     );
 }
 

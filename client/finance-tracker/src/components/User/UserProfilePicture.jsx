@@ -1,20 +1,9 @@
 import { Input } from '@mui/material';
 import { useState } from 'react';
+import { profilePictureStyles } from './styles/UserStyles.js';
 
 function UserProfilePicture() {
     const [pfp, setPfp] = useState("");
-
-    const userProfilePictureStyles = {
-        width: '150px',
-        height: '150px',
-        backgroundColor: 'rgb(211, 211, 211)',
-        borderRadius: '100%',
-        '&:hover' : { 
-            cursor: 'pointer',
-            backgroundColor: 'rgb(100, 100, 100)', 
-            transition: '0.2s all' 
-        }
-    };
 
     const handleFileInput = (event) => {
         const reader = new FileReader();
@@ -30,9 +19,9 @@ function UserProfilePicture() {
     }
 
     return (
-        <label htmlFor='upload' style={userProfilePictureStyles}>
+        <label htmlFor='upload' style={profilePictureStyles}>
             <Input onChange={handleFileInput} id='upload' type='file' sx={{ display: 'none' }} />
-            <img src={pfp} style={userProfilePictureStyles} />
+            <img src={pfp} style={profilePictureStyles} />
         </label>
     );
 }
