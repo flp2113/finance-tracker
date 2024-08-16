@@ -5,9 +5,16 @@ import { itemListStyles } from "./styles/IncomeExpenseStyles";
 import { useState } from "react";
 import Item from "./Item";
 
+/**
+ * Renders a list of items based on the provided type.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.type - The type of items to render ('incomes' or 'expenses').
+ * @returns {JSX.Element} The rendered ItemList component.
+*/
 
 function ItemList({ type }) {
-    const headCells = ['Date', (type === 'income' ? 'Income' : 'Expense') + ' Stream', 'Amount', 'Account'];
+    const headCells = ['Date', (type === 'incomes' ? 'Income' : 'Expense') + ' Stream', 'Amount', 'Account'];
 
     //EXAMPLE OF FETCHING DATA
     const [transactions, setTransactions] = useState([

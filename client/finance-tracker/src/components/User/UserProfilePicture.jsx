@@ -2,6 +2,12 @@ import { Input } from '@mui/material';
 import { useState } from 'react';
 import { profilePictureStyles } from './styles/UserStyles.js';
 
+/**
+ * Renders a user profile picture component.
+ *
+ * @returns {JSX.Element} The user profile picture component.
+*/
+
 function UserProfilePicture() {
     const [pfp, setPfp] = useState("");
 

@@ -4,9 +4,13 @@ import UserInfo from "./UserInfo";
 import Box from '@mui/material/Box';
 import { cardStyles, infoStyles } from "./styles/UserStyles.js";
 
+/**
+ * Renders a user card component.
+ *
+ * @returns {JSX.Element} The user card component.
+*/
+
 function UserCard() {
-    //<UserName name='' /> 'name': name
-    //<UserInfo account='' quantity={} /> 'account': [bank, wallet, savings], 'quantity': money
     return (
         <Box sx={cardStyles}>
             <UserProfilePicture />
