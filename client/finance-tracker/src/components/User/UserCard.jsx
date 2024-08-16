@@ -1,8 +1,6 @@
-import UserProfilePicture from "./UserProfilePicture";
-import UserName from "./UserName";
-import UserInfo from "./UserInfo";
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
 import { cardStyles, infoStyles } from "./styles/UserStyles.js";
+import { UserProfilePicture, UserName, UserInfo } from "./index";
 
 /**
  * Renders a user card component.

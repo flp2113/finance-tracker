@@ -1,9 +1,7 @@
-import { Box } from "@mui/material";
-import { Table, TableBody } from "@mui/material";
-import MyTableHead from "./MyTableHead";
+import { Box, Table, TableBody } from "@mui/material";
 import { itemListStyles } from "./styles/IncomeExpenseStyles";
 import { useState } from "react";
-import Item from "./Item";
+import { MyTableHead, Item } from "./index";
 
 /**
  * Renders a list of items based on the provided type.

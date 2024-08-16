@@ -1,11 +1,13 @@
-import UserCard from "./components/User/UserCard";
 import { Box, Container } from '@mui/material';
+import UserCard from "./components/User/UserCard";
 import IncomesExpenses from "./components/IncomeExpense/IncomesExpenses";
 
 function App() {
     return (
         <Container>
-            <IncomesExpenses type='expenses'/>
+            <UserCard />
+            <IncomesExpenses type="incomes" />
+            <IncomesExpenses type="expenses" />
         </Container>
     );
 }

@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
-import ContentDivider from "./ContentDivider";
-import ItemList from "./ItemList";
+import { ContentDivider, ItemList } from "./index";
 
 /**
  * Renders the IncomesExpenses component.

@@ -1,6 +1,4 @@
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
+import { TableHead, TableRow, TableCell } from '@mui/material';
 import { tableHeadStyles } from './styles/IncomeExpenseStyles.js'
 
 /**

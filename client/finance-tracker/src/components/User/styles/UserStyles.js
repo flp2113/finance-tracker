@@ -1,6 +1,6 @@
 const cardStyles = {
-    width: '300px',
-    height: '400px',
+    width: '300px', //STATIC TEST
+    height: '400px', //STATIC TEST
     backgroundColor: 'rgb(37, 37, 37)',
     borderRadius: '10px',
     display: 'flex',

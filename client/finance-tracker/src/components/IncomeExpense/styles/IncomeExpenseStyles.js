@@ -2,7 +2,7 @@ const contentDividerStyles = {
     color: 'rgb(211, 211, 211)',
     borderBottom: '1px solid rgb(211, 211, 211)',
     mb: '15px',
-    p: '15px'
+    p: '10px'
 };
 
 const itemListStyles = {
