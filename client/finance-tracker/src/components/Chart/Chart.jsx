@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Title } from 'chart.js';
 import { Box } from '@mui/material';
@@ -51,5 +52,9 @@ function Chart({ content }) {
         </Box>
     );
 }
+
+Chart.propTypes = {
+    content: PropTypes.object.isRequired
+};
 
 export default Chart;

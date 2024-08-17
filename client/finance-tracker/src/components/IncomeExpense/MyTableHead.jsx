@@ -21,7 +21,7 @@ function MyTableHead({ headCells }) {
 }
 
 MyTableHead.propTypes = {
-    headCells: PropTypes.Array.isRequired
+    headCells: PropTypes.array.isRequired
 };
 
 export default MyTableHead;

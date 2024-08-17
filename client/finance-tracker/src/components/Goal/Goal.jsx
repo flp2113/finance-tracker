@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box } from "@mui/material";
 import { cardStyles, goalTitleStyles } from './styles/GoalStyles.js'
 import { Doughnut } from 'react-chartjs-2';
@@ -6,6 +7,14 @@ import { Typography } from "@mui/material";
 import StarsIcon from '@mui/icons-material/Stars';
 
 ChartJS.register(ArcElement, Tooltip, Legend); 
+
+/**
+ * Renders a Goal component.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.content - The content of the goal.
+ * @returns {JSX.Element} The rendered Goal component.
+*/
 
 function Goal({ content }) {
 
@@ -48,5 +57,9 @@ function Goal({ content }) {
         </Box>
     );
 }
+
+Goal.propTypes = {
+    content: PropTypes.object.isRequired
+};
 
 export default Goal;
