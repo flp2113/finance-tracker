@@ -3,5 +3,4 @@
 [X] Goals
 [X] Income, Expense
 [X] Bank Account, Wallet, Savings
-[] Subscription
-[] Charts
+[X] Charts

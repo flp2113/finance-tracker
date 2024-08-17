@@ -9,7 +9,7 @@ ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Title);
  *
  * @component
  * @param {Object} props - The component props.
- * @param {Object} props.content - The content object for the chart, {int, int[]}.
+ * @param {Object} props.content - The content object for the chart, {int year, int data[12]}.
  * @returns {JSX.Element} The rendered chart component.
 */
 
