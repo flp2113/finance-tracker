@@ -8,6 +8,8 @@ function App() {
     return (
         <Container>
             <UserCard name='Felipe' info={{ bank: 1000, wallet: 69, savings: 5700 }}/>
+            <IncomesExpenses type='incomes' />
+            <IncomesExpenses type='expenses' />
         </Container>
     );
 }

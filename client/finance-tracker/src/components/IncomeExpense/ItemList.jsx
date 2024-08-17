@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Box, Table, TableBody } from "@mui/material";
 import { itemListStyles } from "./styles/IncomeExpenseStyles";
 import { useState } from "react";
-import { MyTableHead, Item } from "./index";
+import { MyTableHead, MyTableBody, Item } from "./index";
 
 /**
  * Renders a list of items based on the provided type.
@@ -13,10 +13,10 @@ import { MyTableHead, Item } from "./index";
 */
 
 function ItemList({ type }) {
-    const headCells = ['Date', (type === 'incomes' ? 'Income' : 'Expense') + ' Stream', 'Amount', 'Account'];
+    const cells = ['Date', (type === 'incomes' ? 'Income' : 'Expense') + ' Stream', 'Amount', 'Account'];
 
     //EXAMPLE OF FETCHING DATA
-    const [transactions, setTransactions] = useState([
+    const [content, setContent] = useState([
         {id: 0, date: '12/05/2024', amount: 1000, account: 'Bank', stream: 'Supermercados BH'},
         {id: 1, date: '25/12/2024', amount: 820, account: 'Savings', stream: 'Supermercados EPA'},
         {id: 2, date: '05/02/2022', amount: 275, account: 'Wallet', stream: 'Shopping'},
@@ -25,10 +25,8 @@ function ItemList({ type }) {
     return (
         <Box sx={itemListStyles}>
             <Table>
-                <MyTableHead headCells={headCells} />
-                <TableBody>
-                    {transactions.map(t => <Item key={t.id} type={type} content={t} />)}
-                </TableBody>
+                <MyTableHead cells={cells} />
+                <MyTableBody content={content} type={type} />
             </Table>
         </Box>
     );
