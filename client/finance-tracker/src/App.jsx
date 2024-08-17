@@ -2,7 +2,7 @@ import { Box, Container } from '@mui/material';
 import UserCard from "./components/User/UserCard";
 import IncomesExpenses from "./components/IncomeExpense/IncomesExpenses";
 import Goal from './components/Goal/Goal';
-import Chart from './components/Chart/Chart';
+import Chart from './components/Chart/Chart'; 
 
 function App() {
     return (

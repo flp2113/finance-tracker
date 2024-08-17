@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Typography } from "@mui/material";
 
 /**
@@ -22,5 +23,10 @@ function UserInfo({ account, quantity }) {
         </Typography>
     );
 }
+
+UserInfo.propTypes = {
+    account: PropTypes.string.isRequired,
+    quantity: PropTypes.number.isRequired
+};
 
 export default UserInfo;

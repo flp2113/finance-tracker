@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Typography from '@mui/material/Typography';
 
 /**
@@ -15,5 +16,9 @@ function UserName({ name }) {
         </Typography>
     );
 }
+
+UserName.propTypes = {
+    name: PropTypes.string.isRequired
+};
 
 export default UserName;

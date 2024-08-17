@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
 import { cardStyles, infoStyles } from "./styles/UserStyles.js";
 import { UserProfilePicture, UserName, UserInfo } from "./index";
@@ -28,5 +29,14 @@ function UserCard({ name, info }) {
         </Box>
     );
 }
+
+UserCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    info: PropTypes.shape({
+        bank: PropTypes.number.isRequired,
+        wallet: PropTypes.number.isRequired,
+        savings: PropTypes.number.isRequired
+    }).isRequired
+};
 
 export default UserCard;
