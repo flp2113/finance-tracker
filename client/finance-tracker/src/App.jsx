@@ -2,18 +2,18 @@ import { Box, Container } from '@mui/material';
 import UserCard from "./components/User/UserCard";
 import IncomesExpenses from "./components/IncomeExpense/IncomesExpenses";
 import Goal from './components/Goal/Goal';
+import Chart from './components/Chart/Chart';
 
 function App() {
     //EXAMPLE FETCHING DATA
-    const data = [
-        {id: 0, goal: 'Joggers', completed: 60},
-        {id: 1, goal: 'Jeej', completed: 55},
-        {id: 2, goal: 'Poggers', completed: 20}
-    ];
+    const data = {
+        year: 2024,
+        data: [1000, 2000, 1500, 3000, 2000, 2500, 3000, 4000, 3500, 2000, 2500, 3000]
+    };
 
     return (
         <Container>
-            {data.map(d => <Goal key={d.id} content={{...d}} />)}
+            <Chart content={data}/>
         </Container>
     );
 }
