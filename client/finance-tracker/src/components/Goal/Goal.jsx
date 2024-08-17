@@ -34,13 +34,14 @@ function Goal({ content }) {
     };
 
     // GOAL MUST HAVE A DEFINED COST, SO A INITIAL SETUP MUST BE MADE
+    // ADD SOME EFFECT WHEN THE GOAL IS COMPLETED
     return (
         <Box sx={cardStyles}>
             <Box sx={goalTitleStyles}>
                 <StarsIcon sx={{ fontSize: 20 }} />
                 <Typography variant='h6'>{content.goal}</Typography>
             </Box>
-            <Typography variant='p'>$1000</Typography> 
+            <Typography variant='p'>SET GOAL VALUE</Typography>
             <Box sx={{ width: '50px' }}>
                 <Doughnut options={options} data={data} />  
             </Box>

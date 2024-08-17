@@ -13,9 +13,6 @@ function App() {
 
     return (
         <Container>
-            <UserCard />
-            <IncomesExpenses type='incomes'/>
-            <IncomesExpenses type='expenses'/>
             {data.map(d => <Goal key={d.id} content={{...d}} />)}
         </Container>
     );
