@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Typography } from "@mui/material";
 import { contentDividerStyles } from './styles/IncomeExpenseStyles.js'
 
@@ -13,5 +14,9 @@ import { contentDividerStyles } from './styles/IncomeExpenseStyles.js'
 function ContentDivider({ title }) {
     return <Typography variant="h4" sx={contentDividerStyles}>{title}</Typography>;
 }
+
+ContentDivider.propTypes = {
+    title: PropTypes.string.isRequired
+};
 
 export default ContentDivider;

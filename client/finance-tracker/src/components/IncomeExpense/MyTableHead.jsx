@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TableHead, TableRow, TableCell } from '@mui/material';
 import { tableHeadStyles } from './styles/IncomeExpenseStyles.js'
 
@@ -18,5 +19,9 @@ function MyTableHead({ headCells }) {
         </TableHead>
     );
 }
+
+MyTableHead.propTypes = {
+    headCells: PropTypes.Array.isRequired
+};
 
 export default MyTableHead;

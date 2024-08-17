@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box } from "@mui/material";
 import { ContentDivider, ItemList } from "./index";
 
@@ -19,5 +20,9 @@ function IncomesExpenses({ type }) {
         </Box>
     );
 }
+
+IncomesExpenses.propTypes = {
+    type: PropTypes.string.isRequired
+};
 
 export default IncomesExpenses;

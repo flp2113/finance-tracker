@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TableRow, TableCell } from "@mui/material";
 import { tableCellStyle } from "./styles/IncomeExpenseStyles.js";
 
@@ -24,5 +25,15 @@ function Item({ type, content }) {
         </TableRow>
     );
 }
+
+Item.propTypes = {
+    type: PropTypes.string.isRequired,
+    content: PropTypes.shape({
+        date: PropTypes.string.isRequired,
+        stream: PropTypes.string.isRequired,
+        amount: PropTypes.number.isRequired,
+        account: PropTypes.string.isRequired,
+    }).isRequired
+};
 
 export default Item;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box, Table, TableBody } from "@mui/material";
 import { itemListStyles } from "./styles/IncomeExpenseStyles";
 import { useState } from "react";
@@ -32,5 +33,9 @@ function ItemList({ type }) {
         </Box>
     );
 }
+
+ItemList.propTypes = {
+    type: PropTypes.string.isRequired
+};
 
 export default ItemList;
