@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { Box, Table, TableBody } from "@mui/material";
+import { Box, Table } from "@mui/material";
 import { itemListStyles } from "./styles/IncomeExpenseStyles";
 import { useState } from "react";
-import { MyTableHead, MyTableBody, Item } from "./index";
+import { MyTableHead, MyTableBody } from "./index";
 
 /**
  * Renders a list of items based on the provided type.
